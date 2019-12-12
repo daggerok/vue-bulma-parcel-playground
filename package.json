@@ -1,0 +1,41 @@
+{
+  "name": "vue-bulma-parcel-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever ./node_modules/.bin/parcel src/index.html",
+    "logs": "forever logs -f 0",
+    "stop": "forever stopall --killTree"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.7.5",
+    "@types/node": "12.12.17",
+    "@types/vue": "2.0.0",
+    "@vue/component-compiler-utils": "3.1.0",
+    "babel-preset-vue": "2.0.2",
+    "forever": "1.0.0",
+    "parcel": "1.12.4",
+    "vue-template-compiler": "2.6.10"
+  },
+  "dependencies": {
+    "bulma": "0.8.0",
+    "font-awesome": "4.7.0",
+    "vue": "2.6.10",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuex": "3.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "vue",
+        {
+          "eventModifiers": false
+        }
+      ]
+    ]
+  }
+}
